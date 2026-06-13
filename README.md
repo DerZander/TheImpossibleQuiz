@@ -28,7 +28,7 @@ Kleines Quiz-Addon fuer World of Warcraft mit kniffligen Teekesselchen-Fragen.
 - Im Spiel den Chat-Befehl ausfuehren:
 
 ```text
-/teekessel
+/quiz
 ```
 
 - Antworten mit den beiden Buttons waehlen.

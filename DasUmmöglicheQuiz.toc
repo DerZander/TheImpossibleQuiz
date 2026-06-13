@@ -3,6 +3,7 @@
 ## Notes: Kniffliges Teekesselchen-Quiz
 ## Author: Timo & Simon Z.
 ## Version: 1.0
+## IconTexture: Interface\AddOns\DasUmmöglicheQuiz\logo
 
 Data.lua
 QuizManager.lua
