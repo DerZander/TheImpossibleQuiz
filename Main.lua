@@ -16,6 +16,12 @@ local function ShowQuestion()
         frame.buttonA:Hide()
         frame.buttonB:Hide()
         frame.nextButton:Hide()
+        
+        -- Alle anderen Texte ausblenden
+        frame.feedback:SetText("")
+        frame.explanation:SetText("")
+        frame.userAnswer:SetText("")
+        frame.progress:SetText("")
 
         return
     end
