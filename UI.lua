@@ -1,6 +1,6 @@
 local frame = CreateFrame("Frame", "TeekesselchenQuizFrame", UIParent, "BackdropTemplate")
 
-frame:SetSize(600, 350)
+frame:SetSize(600, 365)
 frame:SetPoint("CENTER")
 frame:SetMovable(true)
 frame:EnableMouse(true)
