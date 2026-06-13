@@ -53,24 +53,24 @@ local function HandleAnswer(side)
 
     if correct then
         frame.feedback:SetText("Richtig!")
-	    frame.explanation:SetText(
-       		 "Richtige Antwort: "
-       		 .. quiz.activeQuestion.correctSide
-       		 .. "\n\n"
-       		 .. quiz.activeQuestion.data.correctExplanation
-       		 .. "\n\n Die andere Antwort wÃ¤re falsch, weil "
-       		 .. quiz.activeQuestion.data.wrongExplanation
-		)
+        frame.explanation:SetText(
+                "Richtige Antwort: "
+                .. quiz.activeQuestion.correctSide
+                .. "\n\n "
+                .. quiz.activeQuestion.data.correctExplanation
+                .. "\n\n Die andere Antwort wäre falsch, weil "
+                .. quiz.activeQuestion.data.wrongExplanation
+        )
     else
         frame.feedback:SetText("Leider falsch!")
-    	    frame.explanation:SetText(
-        	"Richtige Antwort: "
-        	.. quiz.activeQuestion.correctSide
-        	.. "\n\n"
-        	.. quiz.activeQuestion.data.correctExplanation
-        	.. "\n\n Die Antwort ist falsch, weil "
-	        .. quiz.activeQuestion.data.wrongExplanation
-    		)
+            frame.explanation:SetText(
+            "Richtige Antwort: "
+            .. quiz.activeQuestion.correctSide
+            .. "\n\n"
+            .. quiz.activeQuestion.data.correctExplanation
+            .. "\n\n Die Antwort ist falsch, weil "
+            .. quiz.activeQuestion.data.wrongExplanation
+            )
     end
 
     frame.nextButton:Show()
