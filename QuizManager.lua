@@ -1,7 +1,7 @@
-UnmoeglichesQuiz = {}
-UnmoeglichesQuiz.__index = UnmoeglichesQuiz
+ImpossibleQuiz = {}
+ImpossibleQuiz.__index = ImpossibleQuiz
 
-function UnmoeglichesQuiz:New()
+function ImpossibleQuiz:New()
     local obj = {}
 
     setmetatable(obj, self)
@@ -13,11 +13,11 @@ function UnmoeglichesQuiz:New()
     return obj
 end
 
-function UnmoeglichesQuiz:GetQuestion()
-    return UnmoeglichesQuizData.Questions[self.currentQuestion]
+function ImpossibleQuiz:GetQuestion()
+    return ImpossibleQuizData.Questions[self.currentQuestion]
 end
 
-function UnmoeglichesQuiz:PrepareQuestion()
+function ImpossibleQuiz:PrepareQuestion()
     local correctSide = math.random(1, 2) == 1 and "A" or "B"
 
     self.activeQuestion = {
@@ -28,7 +28,7 @@ function UnmoeglichesQuiz:PrepareQuestion()
     return self.activeQuestion
 end
 
-function UnmoeglichesQuiz:Answer(side)
+function ImpossibleQuiz:Answer(side)
     local correct = side == self.activeQuestion.correctSide
 
     if correct then
@@ -44,10 +44,10 @@ function UnmoeglichesQuiz:Answer(side)
     return correct
 end
 
-function UnmoeglichesQuiz:NextQuestion()
+function ImpossibleQuiz:NextQuestion()
     self.currentQuestion = self.currentQuestion + 1
 end
 
-function UnmoeglichesQuiz:IsFinished()
-    return self.currentQuestion > #UnmoeglichesQuizData.Questions
+function ImpossibleQuiz:IsFinished()
+    return self.currentQuestion > #ImpossibleQuizData.Questions
 end

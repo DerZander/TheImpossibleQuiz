@@ -1,4 +1,4 @@
-local button = CreateFrame("Button", "UnmoeglichesQuizMinimapButton", Minimap)
+local button = CreateFrame("Button", "ImpossibleQuizMinimapButton", Minimap)
 button:SetSize(32, 32)
 button:SetFrameStrata("MEDIUM")
 button:SetFrameLevel(8)
@@ -14,7 +14,7 @@ local minimapPos = 220
 local icon = button:CreateTexture(nil, "BACKGROUND")
 icon:SetSize(20, 20)
 icon:SetPoint("CENTER")
-icon:SetTexture("Interface\\AddOns\\DasUnmöglicheQuiz\\logo")
+icon:SetTexture("Interface\\AddOns\\TheImpossibleQuiz\\logo")
 -- Runde Maske: Standard-Kreisausschnitt
 local q = 0.08  -- Offset für runden Schnitt
 icon:SetTexCoord(q, 1-q, q, 1-q)
@@ -48,8 +48,8 @@ end)
 button:SetScript("OnClick", function(self, button)
     if button == "LeftButton" then
         -- Quiz öffnen
-        if SlashCmdList["UNMOEGLICHESQUIZ"] then
-            SlashCmdList["UNMOEGLICHESQUIZ"]()
+        if SlashCmdList["IMPOSSIBLEQUIZ"] then
+            SlashCmdList["IMPOSSIBLEQUIZ"]()
         end
     elseif button == "RightButton" then
         -- Position zurücksetzen

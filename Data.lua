@@ -1,4 +1,4 @@
-UnmoeglichesQuizData = {
+ImpossibleQuizData = {
     Questions = {
         {
             question = "Wie nennt man ein Werkzeug zum Einschlagen von Nägeln?",

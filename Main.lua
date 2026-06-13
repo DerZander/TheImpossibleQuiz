@@ -1,5 +1,5 @@
-local quiz = UnmoeglichesQuiz:New()
-local frame = UnmoeglichesQuizFrameRef
+local quiz = ImpossibleQuiz:New()
+local frame = ImpossibleQuizFrameRef
 
 local function ShowQuestion()
 
@@ -9,7 +9,7 @@ local function ShowQuestion()
             string.format(
                 "Quiz beendet!\n\nPunkte: %d/%d",
                 quiz.score,
-                #UnmoeglichesQuizData.Questions
+                #ImpossibleQuizData.Questions
             )
         )
 
@@ -32,7 +32,7 @@ local function ShowQuestion()
         string.format(
             "Frage %d von %d",
             quiz.currentQuestion,
-            #UnmoeglichesQuizData.Questions
+            #ImpossibleQuizData.Questions
         )
     )
 
@@ -95,14 +95,14 @@ frame.nextButton:SetScript("OnClick", function()
     ShowQuestion()
 end)
 
-SLASH_UNMOEGLICHESQUIZ1 = "/quiz"
-SLASH_UNMOEGLICHESQUIZ2 = "/unmöglich"
+SLASH_IMPOSSIBLEQUIZ1 = "/quiz"
+SLASH_IMPOSSIBLEQUIZ2 = "/impossiblequiz"
 
-SlashCmdList["UNMOEGLICHESQUIZ"] = function()
+SlashCmdList["IMPOSSIBLEQUIZ"] = function()
 
     frame:Show()
 
-    quiz = UnmoeglichesQuiz:New()
+    quiz = ImpossibleQuiz:New()
 
     frame.buttonA:Show()
     frame.buttonB:Show()

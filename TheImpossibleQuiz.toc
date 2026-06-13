@@ -1,0 +1,12 @@
+## Interface: 120005
+## Title: The Impossible Quiz
+## Notes: A tricky quiz testing your knowledge of ambiguous words! | Das unmögliche Quiz - Teste dein Wissen!
+## Author: Timo & Simon Z.
+## Version: 1.0
+## IconTexture: Interface\AddOns\TheImpossibleQuiz\logo
+
+Data.lua
+QuizManager.lua
+UI.lua
+MinimapButton.lua
+Main.lua
