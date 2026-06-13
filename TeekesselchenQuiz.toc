@@ -1,0 +1,10 @@
+## Interface: 120005
+## Title: Teekesselchen Quiz
+## Notes: Lustiges Teekesselchen-Quiz
+## Author: Timo
+## Version: 1.0
+
+Data.lua
+QuizManager.lua
+UI.lua
+Main.lua
