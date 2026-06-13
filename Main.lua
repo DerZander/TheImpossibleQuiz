@@ -32,8 +32,8 @@ local function ShowQuestion()
 
     frame.question:SetText(q.data.question)
 
-    frame.buttonA:SetText(q.data.word)
-    frame.buttonB:SetText(q.data.word)
+    frame.buttonA:SetText("A: " .. q.data.word)
+    frame.buttonB:SetText("B: " .. q.data.word)
 
     frame.feedback:SetText("")
     frame.explanation:SetText("")
