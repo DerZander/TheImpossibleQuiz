@@ -1,4 +1,4 @@
-local button = CreateFrame("Button", "TeekesselchenMinimapButton", Minimap)
+local button = CreateFrame("Button", "UnmoeglichesQuizMinimapButton", Minimap)
 button:SetSize(32, 32)
 button:SetFrameStrata("MEDIUM")
 button:SetFrameLevel(8)
@@ -48,8 +48,8 @@ end)
 button:SetScript("OnClick", function(self, button)
     if button == "LeftButton" then
         -- Quiz öffnen
-        if SlashCmdList["TEEKESSELCHEN"] then
-            SlashCmdList["TEEKESSELCHEN"]()
+        if SlashCmdList["UNMOEGLICHESQUIZ"] then
+            SlashCmdList["UNMOEGLICHESQUIZ"]()
         end
     elseif button == "RightButton" then
         -- Position zurücksetzen

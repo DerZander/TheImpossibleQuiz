@@ -1,5 +1,5 @@
-local quiz = TeekesselchenQuiz:New()
-local frame = TeekesselchenQuizFrameRef
+local quiz = UnmoeglichesQuiz:New()
+local frame = UnmoeglichesQuizFrameRef
 
 local function ShowQuestion()
 
@@ -9,7 +9,7 @@ local function ShowQuestion()
             string.format(
                 "Quiz beendet!\n\nPunkte: %d/%d",
                 quiz.score,
-                #TeekesselchenQuizData.Questions
+                #UnmoeglichesQuizData.Questions
             )
         )
 
@@ -32,7 +32,7 @@ local function ShowQuestion()
         string.format(
             "Frage %d von %d",
             quiz.currentQuestion,
-            #TeekesselchenQuizData.Questions
+            #UnmoeglichesQuizData.Questions
         )
     )
 
@@ -95,13 +95,14 @@ frame.nextButton:SetScript("OnClick", function()
     ShowQuestion()
 end)
 
-SLASH_TEEKESSELCHEN1 = "/quiz"
+SLASH_UNMOEGLICHESQUIZ1 = "/quiz"
+SLASH_UNMOEGLICHESQUIZ2 = "/unmöglich"
 
-SlashCmdList["TEEKESSELCHEN"] = function()
+SlashCmdList["UNMOEGLICHESQUIZ"] = function()
 
     frame:Show()
 
-    quiz = TeekesselchenQuiz:New()
+    quiz = UnmoeglichesQuiz:New()
 
     frame.buttonA:Show()
     frame.buttonB:Show()

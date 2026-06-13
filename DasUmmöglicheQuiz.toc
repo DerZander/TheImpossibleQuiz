@@ -1,6 +1,6 @@
 ## Interface: 120005
 ## Title: Das unmögliche Quiz
-## Notes: Kniffliges Teekesselchen-Quiz
+## Notes: Das unmögliche Quiz - Teste dein Wissen!
 ## Author: Timo & Simon Z.
 ## Version: 1.0
 ## IconTexture: Interface\AddOns\DasUmmöglicheQuiz\logo

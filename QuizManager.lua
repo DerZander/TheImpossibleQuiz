@@ -1,7 +1,7 @@
-TeekesselchenQuiz = {}
-TeekesselchenQuiz.__index = TeekesselchenQuiz
+UnmoeglichesQuiz = {}
+UnmoeglichesQuiz.__index = UnmoeglichesQuiz
 
-function TeekesselchenQuiz:New()
+function UnmoeglichesQuiz:New()
     local obj = {}
 
     setmetatable(obj, self)
@@ -13,11 +13,11 @@ function TeekesselchenQuiz:New()
     return obj
 end
 
-function TeekesselchenQuiz:GetQuestion()
-    return TeekesselchenQuizData.Questions[self.currentQuestion]
+function UnmoeglichesQuiz:GetQuestion()
+    return UnmoeglichesQuizData.Questions[self.currentQuestion]
 end
 
-function TeekesselchenQuiz:PrepareQuestion()
+function UnmoeglichesQuiz:PrepareQuestion()
     local correctSide = math.random(1, 2) == 1 and "A" or "B"
 
     self.activeQuestion = {
@@ -28,7 +28,7 @@ function TeekesselchenQuiz:PrepareQuestion()
     return self.activeQuestion
 end
 
-function TeekesselchenQuiz:Answer(side)
+function UnmoeglichesQuiz:Answer(side)
     local correct = side == self.activeQuestion.correctSide
 
     if correct then
@@ -44,10 +44,10 @@ function TeekesselchenQuiz:Answer(side)
     return correct
 end
 
-function TeekesselchenQuiz:NextQuestion()
+function UnmoeglichesQuiz:NextQuestion()
     self.currentQuestion = self.currentQuestion + 1
 end
 
-function TeekesselchenQuiz:IsFinished()
-    return self.currentQuestion > #TeekesselchenQuizData.Questions
+function UnmoeglichesQuiz:IsFinished()
+    return self.currentQuestion > #UnmoeglichesQuizData.Questions
 end

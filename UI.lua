@@ -1,4 +1,4 @@
-local frame = CreateFrame("Frame", "TeekesselchenQuizFrame", UIParent, "BackdropTemplate")
+local frame = CreateFrame("Frame", "Das unmögliche Quiz", UIParent, "BackdropTemplate")
 
 frame:SetSize(600, 360)
 frame:SetPoint("CENTER")
@@ -76,4 +76,4 @@ frame.closeButton:SetScript("OnClick", function()
     frame:Hide()
 end)
 
-TeekesselchenQuizFrameRef = frame
+UnmoeglichesQuizFrameRef = frame

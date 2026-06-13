@@ -1,10 +1,10 @@
 # Das unmögliche Quiz
 
-Teste dein Wissen mit kniffligen Teekesselchen-Fragen! Kannst du erraten, welche Bedeutung gemeint ist?
+Teste dein Wissen mit kniffligen Quiz-Fragen! Kannst du die richtige Bedeutung erraten?
 
 ## 🎮 Was ist das?
 
-**Das unmögliche Quiz** ist ein unterhaltsames Quiz-Addon für World of Warcraft, das dich mit den berühmten deutschen **Teekesselchen** herausfordert. Teekesselchen sind Wörter mit mehreren Bedeutungen - aber welche ist die richtige?
+**Das unmögliche Quiz** ist ein unterhaltsames Quiz-Addon für World of Warcraft, das dich mit kniffligen Fragen herausfordert. Wörter mit mehreren Bedeutungen - aber welche ist die richtige?
 
 Beispiel: **Schloss** - Ist es ein Gebäude oder ein Verschluss? Du entscheidest!
 
@@ -12,7 +12,7 @@ Beispiel: **Schloss** - Ist es ein Gebäude oder ein Verschluss? Du entscheidest
 
 - 🎲 **Zufällige Antwortpositionen** - Bei jeder Frage wird die richtige Antwort zufällig auf Seite A oder B platziert
 - ✅ **Sofortige Rückmeldung** - Direkt nach jeder Antwort erfährst du, ob sie richtig war
-- 📖 **Ausführliche Erklärungen** - Lerne die verschiedenen Bedeutungen jedes Teekesselchens kennen
+- 📖 **Ausführliche Erklärungen** - Lerne die verschiedenen Bedeutungen kennen
 - 📊 **Fortschrittsanzeige** - Sehe deinen aktuellen Punktestand und Fortschritt
 - 🖱️ **Verschiebbares Fenster** - Positioniere das Quiz-Fenster per Drag & Drop genau dort, wo du es haben möchtest
 - 🗺️ **Minimap-Button** - Schneller Zugriff direkt über die Minimap
@@ -81,7 +81,7 @@ Es gibt drei Möglichkeiten, das Quiz zu starten:
 ### Dateien
 
 - `DasUmmöglicheQuiz.toc` - Addon-Metadaten und Ladereihenfolge
-- `Data.lua` - Fragenset mit allen Teekesselchen und Erklärungen
+- `Data.lua` - Fragenset mit allen Fragen und Erklärungen
 - `QuizManager.lua` - Quiz-Logik (Fragenverwaltung, Antworten, Punktestand)
 - `UI.lua` - Benutzeroberfläche (Fenster, Buttons, Styling)
 - `MinimapButton.lua` - Minimap-Button mit Drag & Drop
@@ -113,4 +113,4 @@ Dieses Addon ist kostenlos und darf für private Zwecke genutzt werden. Bitte be
 
 **Viel Spaß beim Rätseln! 🎉**
 
-Kennst du alle Teekesselchen? Finde es heraus!
+Kannst du alle Fragen richtig beantworten? Finde es heraus!
