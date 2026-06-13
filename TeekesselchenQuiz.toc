@@ -1,7 +1,7 @@
 ## Interface: 120005
 ## Title: Teekesselchen Quiz
 ## Notes: Lustiges Teekesselchen-Quiz
-## Author: Timo
+## Author: Timo & Simon Z.
 ## Version: 1.0
 
 Data.lua
