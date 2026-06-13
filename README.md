@@ -60,8 +60,8 @@ Es gibt drei Möglichkeiten, das Quiz zu starten:
 ## ❓ Häufige Fragen (FAQ)
 
 ### Das Addon wird nicht angezeigt
-- Stelle sicher, dass der Ordnername **DasUmmöglicheQuiz** lautet
-- Überprüfe, ob die .toc-Datei den gleichen Namen hat: **DasUmmöglicheQuiz.toc**
+- Stelle sicher, dass der Ordnername **DasUnmöglicheQuiz** lautet
+- Überprüfe, ob die .toc-Datei den gleichen Namen hat: **DasUnmöglicheQuiz.toc**
 - Starte WoW komplett neu (nicht nur `/reload`)
 
 ### Das Logo wird nicht angezeigt
@@ -80,7 +80,7 @@ Es gibt drei Möglichkeiten, das Quiz zu starten:
 
 ### Dateien
 
-- `DasUmmöglicheQuiz.toc` - Addon-Metadaten und Ladereihenfolge
+- `DasUnmöglicheQuiz.toc` - Addon-Metadaten und Ladereihenfolge
 - `Data.lua` - Fragenset mit allen Fragen und Erklärungen
 - `QuizManager.lua` - Quiz-Logik (Fragenverwaltung, Antworten, Punktestand)
 - `UI.lua` - Benutzeroberfläche (Fenster, Buttons, Styling)

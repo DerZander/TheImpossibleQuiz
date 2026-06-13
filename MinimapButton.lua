@@ -14,7 +14,7 @@ local minimapPos = 220
 local icon = button:CreateTexture(nil, "BACKGROUND")
 icon:SetSize(20, 20)
 icon:SetPoint("CENTER")
-icon:SetTexture("Interface\\AddOns\\DasUmmöglicheQuiz\\logo")
+icon:SetTexture("Interface\\AddOns\\DasUnmöglicheQuiz\\logo")
 -- Runde Maske: Standard-Kreisausschnitt
 local q = 0.08  -- Offset für runden Schnitt
 icon:SetTexCoord(q, 1-q, q, 1-q)

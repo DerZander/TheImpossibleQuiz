@@ -3,7 +3,7 @@
 ## Notes: Das unmögliche Quiz - Teste dein Wissen!
 ## Author: Timo & Simon Z.
 ## Version: 1.0
-## IconTexture: Interface\AddOns\DasUmmöglicheQuiz\logo
+## IconTexture: Interface\AddOns\DasUnmöglicheQuiz\logo
 
 Data.lua
 QuizManager.lua
