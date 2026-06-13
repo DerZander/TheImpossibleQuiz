@@ -1,6 +1,6 @@
 local frame = CreateFrame("Frame", "TeekesselchenQuizFrame", UIParent, "BackdropTemplate")
 
-frame:SetSize(600, 365)
+frame:SetSize(600, 360)
 frame:SetPoint("CENTER")
 frame:SetMovable(true)
 frame:EnableMouse(true)
@@ -64,7 +64,7 @@ frame.buttonB:SetPoint("TOPRIGHT", -80, -120)
 
 frame.nextButton = CreateFrame("Button", nil, frame, "UIPanelButtonTemplate")
 frame.nextButton:SetSize(180, 40)
-frame.nextButton:SetPoint("BOTTOM", 0, 10)
+frame.nextButton:SetPoint("BOTTOM", 0, 20)
 frame.nextButton:SetText("Nächste Frage")
 frame.nextButton:Hide()
 
