@@ -1,6 +1,6 @@
-# Teekesselchen Quiz (WoW Addon)
+# Das unmögliche Quiz (WoW Addon)
 
-Kleines Quiz-Addon fuer World of Warcraft mit Teekesselchen-Fragen.
+Kleines Quiz-Addon fuer World of Warcraft mit kniffligen Teekesselchen-Fragen.
 
 ## Features
 

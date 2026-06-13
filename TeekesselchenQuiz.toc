@@ -1,6 +1,6 @@
 ## Interface: 120005
-## Title: Teekesselchen Quiz
-## Notes: Lustiges Teekesselchen-Quiz
+## Title: Das unmögliche Quiz
+## Notes: Kniffliges Teekesselchen-Quiz
 ## Author: Timo & Simon Z.
 ## Version: 1.0
 

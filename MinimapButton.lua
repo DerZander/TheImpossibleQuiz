@@ -33,7 +33,7 @@ overlay:SetPoint("TOPLEFT")
 -- Tooltip
 button:SetScript("OnEnter", function(self)
     GameTooltip:SetOwner(self, "ANCHOR_LEFT")
-    GameTooltip:SetText("Teekesselchen Quiz", 1, 0.82, 0, 1)
+    GameTooltip:SetText("Das unmögliche Quiz", 1, 0.82, 0, 1)
     GameTooltip:AddLine("Linksklick: Quiz starten", 1, 1, 1, 1)
     GameTooltip:AddLine("Rechtsklick: Position zurücksetzen", 0.7, 0.7, 0.7, 1)
     GameTooltip:AddLine("Ziehen: Position ändern", 0.7, 0.7, 0.7, 1)
