@@ -4,18 +4,36 @@ local frame = TeekesselchenQuizFrameRef
 local function ShowQuestion()
 
     if quiz:IsFinished() then
+        local percentage = math.floor((quiz.score / #TeekesselchenQuizData.Questions) * 100)
+        local rating = ""
+        
+        if percentage >= 90 then
+            rating = "*** HERVORRAGEND! ***"
+        elseif percentage >= 70 then
+            rating = "** Sehr gut! **"
+        elseif percentage >= 50 then
+            rating = "* Gut gemacht! *"
+        else
+            rating = "Weiter üben!"
+        end
 
         frame.question:SetText(
             string.format(
-                "Quiz beendet!\n\nPunkte: %d/%d",
+                "Quiz beendet!\n\n%s\n\nPunkte: %d/%d (%d%%)",
+                rating,
                 quiz.score,
-                #TeekesselchenQuizData.Questions
+                #TeekesselchenQuizData.Questions,
+                percentage
             )
         )
 
         frame.buttonA:Hide()
         frame.buttonB:Hide()
         frame.nextButton:Hide()
+        frame.scoreText:SetText("")
+        frame.feedback:SetText("")
+        frame.explanation:SetText("")
+        frame.userAnswer:SetText("")
 
         return
     end
@@ -29,6 +47,10 @@ local function ShowQuestion()
             #TeekesselchenQuizData.Questions
         )
     )
+    
+    frame.scoreText:SetText(
+        string.format("%d Punkte", quiz.score)
+    )
 
     frame.question:SetText(q.data.question)
 
@@ -37,6 +59,7 @@ local function ShowQuestion()
 
     frame.feedback:SetText("")
     frame.explanation:SetText("")
+    frame.userAnswer:SetText("")
 
     frame.buttonA:Enable()
     frame.buttonB:Enable()
@@ -52,18 +75,24 @@ local function HandleAnswer(side)
     frame.buttonB:Disable()
 
     if correct then
-        frame.feedback:SetText("Richtig!")
+        frame.feedback:SetText("RICHTIG!")
+        frame.feedback:SetTextColor(0.2, 1, 0.2, 1)
     else
-        frame.feedback:SetText("Leider falsch!")
+        frame.feedback:SetText("LEIDER FALSCH!")
+        frame.feedback:SetTextColor(1, 0.2, 0.2, 1)
     end
+    
+    frame.userAnswer:SetText(
+        string.format("Ihr Tipp: %s", side)
+    )
 
     frame.explanation:SetText(
-        "Richtige Antwort: "
-        .. quiz.activeQuestion.correctSide
-        .. "\n\n"
-        .. quiz.activeQuestion.data.correctExplanation
-        .. "\n\n💡 "
-        .. quiz.activeQuestion.data.wrongExplanation
+        string.format(
+            "Richtige Antwort: %s\n\n> %s\n\nDie andere Bedeutung:\n> %s",
+            quiz.activeQuestion.correctSide,
+            quiz.activeQuestion.data.correctExplanation,
+            quiz.activeQuestion.data.wrongExplanation
+        )
     )
 
     frame.nextButton:Show()
@@ -82,7 +111,7 @@ frame.nextButton:SetScript("OnClick", function()
     ShowQuestion()
 end)
 
-SLASH_TEEKESSELCHEN1 = "/teekessel"
+SLASH_TEEKESSELCHEN1 = "/quiz"
 
 SlashCmdList["TEEKESSELCHEN"] = function()
 
